@@ -51,3 +51,21 @@ n: ## Run node in dir app with params cmd. example 'cmd="npm i"'
 
 npm-install: ## Install node_modules according to the current package-lock.json file
 	docker-compose run --rm node npm install
+
+npm-up: ## Run npm command "up"
+	docker-compose run --rm node npm run up
+
+npm-dev: ## Run npm command "dev"
+	docker-compose run --rm node npm run dev
+
+npm-build: ## Run npm command "build"
+	docker-compose run --rm node npm run build
+
+npm-watch: ## Run npm command "watch"
+	docker-compose run --rm node npm run watch
+
+npm-analizer: ## Run npm command "analizer"
+	docker-compose run --rm node npm run analizer
+
+npm-profile: ## Run npm command "profile"
+	docker-compose run --rm node npm run profile
